@@ -48,3 +48,25 @@ golang的异常机制 panic 和 recover ？为什么不用try catch
 
 
 golang多核是如何使用的？
+
+
+
+## 升级go
+
+```sh
+cd /home/fjdev/go
+
+wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+
+rm -rf /usr/local/go
+
+rm -rf /usr/bin/go
+rm -rf /usr/bin/gofmt
+rm -rf /usr/bin/godoc
+
+tar -xzf go1.12.7.linux-amd64.tar.gz -C /usr/local
+
+ln -s /usr/local/go/bin/* /usr/bin/
+
+```
+
